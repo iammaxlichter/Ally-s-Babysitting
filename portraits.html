@@ -23,9 +23,20 @@
   <title>Ally Judge</title>
 </head>
 
-
 <body>
-  <!-- Header -->
+
+<!-- Include the navbar -->
+<nav id="navbar" class="sticky-top"></nav>
+<script>
+  // Load navbar content using fetch and insert it into the header element
+  fetch('HTMLcomponents/navbar.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+  <!-- Include the navbar -->
   <nav id="navbar" class="sticky-top"></nav>
   <script>
     // Load navbar content using fetch and insert it into the header element
@@ -36,62 +47,9 @@
       });
   </script>
 
-  <!-- Main Content -->
-  <div class="container mt-5">
-    <h2>Contact Ally Judge</h2>
-    <form>
-      <!-- Name -->
-      <div class="form-group row">
-        <label for="firstName" class="col-sm-2 col-form-label">First Name <span class="text-danger">*</span></label>
-        <div class="col-sm-4">
-          <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
-        </div>
-        <label for="lastName" class="col-sm-2 col-form-label">Last Name <span class="text-danger">*</span></label>
-        <div class="col-sm-4">
-          <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
-        </div>
-      </div>
-
-      <!-- Email -->
-      <div class="form-group row">
-        <label for="email" class="col-sm-2 col-form-label">Email <span class="text-danger">*</span></label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="email" placeholder="Email" required>
-        </div>
-      </div>
-
-      <!-- Session Details -->
-      <div class="form-group row">
-        <label for="sessionDetails" class="col-sm-2 col-form-label">Session Details <span class="text-danger">*</span></label>
-        <div class="col-sm-10">
-          <textarea class="form-control" id="sessionDetails" rows="4" required></textarea>
-        </div>
-      </div>
-
-      <!-- Budget -->
-      <div class="form-group row">
-        <label for="budget" class="col-sm-2 col-form-label">Budget <span class="text-danger">*</span></label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" id="budget" placeholder="Budget" required>
-        </div>
-      </div>
-
-      <!-- Future Concerns -->
-      <div class="form-group row">
-        <label for="futureConcerns" class="col-sm-2 col-form-label">Future Concerns / Questions</label>
-        <div class="col-sm-10">
-          <textarea class="form-control" id="futureConcerns" rows="4"></textarea>
-        </div>
-      </div>
-
-      <!-- Submit Button -->
-      <div class="form-group row">
-        <div class="col-sm-10 offset-sm-2">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
-    </form>
-  </div>
+  <main role="main">
+    <!-- Your main content here -->
+  </main>
 
   <!-- Footer -->
   <footer id="footer" class="bg-white py-4"></footer>
@@ -118,6 +76,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <!-- Inline CSS -->
+  <style>
+   
+  </style>
+
 </body>
 
 </html>

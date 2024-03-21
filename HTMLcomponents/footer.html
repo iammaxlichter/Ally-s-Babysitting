@@ -1,0 +1,50 @@
+<footer class="bg-white py-4" style="font-family: 'Raleway', sans-serif; font-size: 12px;">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="ml-4">
+        <ul class="list-inline text-muted">
+          <li class="list-inline-item mr-3"><a href="https://www.instagram.com/allyjudge/"><i class="fab fa-instagram"
+                style="color: gray;"></i></a></li>
+          <li class="list-inline-item mr-3"><a href="https://www.facebook.com/allyson.judge.3"><i
+                class="fab fa-facebook" style="color: gray;"></i></a></li>
+          <li class="list-inline-item">
+            <a href="#" onclick="openShareModal()">
+              <i class="fas fa-share-alt" style="color: gray;"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted">Ally Judge © 2024</p>
+      </div>
+      <div class="mr-4">
+        <p class="mb-0"><a href="#">Back to top</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backdrop for modal -->
+  <div id="modalBackdrop" class="modal-backdrop"></div>
+  <div id="shareModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header text-center justify-content-center" style="border-bottom: none;">
+          <h4 class="modal-title" style="font-family: 'Raleway', sans-serif; font-size: 15px;">Share</h4>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body text-center">
+          <div class="input-group">
+            <input id="shareLink" type="text" class="form-control bg-light" style="font-family: 'Raleway', sans-serif;" value="https://allyjudge.com" readonly>
+            <div class="input-group-append">
+              <button id="copyButton" class="btn btn-outline-secondary" type="button">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+          </div>
+          <div id="copySuccessMessage" class="text-success mt-2"
+            style="display: none; font-family: 'Raleway', sans-serif; font-size: 13px;">Successfully copied to
+            clipboard!</div>
+        </div>
+      </div>
+    </div>
+  </div>

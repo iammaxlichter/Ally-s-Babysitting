@@ -2,121 +2,75 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Ally's Photography</title>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Google Fonts - Raleway -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Link to share modal CSS -->
+  <link rel="stylesheet" href="CScomponents/shareModal.css">
+
+  <!-- Title -->
+  <title>Ally Judge</title>
 </head>
-<div class="container-fluid px-0" style="max-width: 2000px;">
 
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#EDD8ED">
-        <a class="navbar-brand display-4" style="font-size:25px;" href="index.html">Ally's Photography</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse float-right justify-content-end" id="navbarNav">
-          <ul class="navbar-nav" style="font-size:15px; font-weight: 400;">
-            <li class="nav-item px-2">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" style="text-decoration: underline;" href="editorials.html">Editorials</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="portraits.html">Portraits</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="allacross.html">All Across</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    <body>
-        <div class="album py-5 bg-light">
-            <div class="container">
+<body>
 
+  <!-- Include the navbar -->
+  <nav id="navbar" class="sticky-top"></nav>
+  <script>
+    // Load navbar content using fetch and insert it into the header element
+    fetch('HTMLcomponents/navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+      });
+  </script>
 
-                <div class="row">
+  <main role="main">
+    <!-- Your main content here -->
+  </main>
 
-                    <div class="col-md-4 mb-5">
-                        <div class="card box-shadow d-flex justify-content-center"
-                            style="height: 500px; background-color: #FFE4E4;">
-                            <div class="text-center">
-                                <img class="card-img-top w-75 mb-3" src="/pictures/triDelta.svg" alt="Tri Delta Icon">
-                                <div class="card-body">
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                                        ex molestias
-                                        veritatis quibusdam deserunt explicabo consequatur ipsum ducimus debitis
-                                        aspernatur doloremque
-                                        neque mollitia numquam, illum nobis tempora dolore ipsa voluptatum?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <div class="card box-shadow d-flex justify-content-center"
-                            style="height: 500px; background-color: #FFFB96;">
-                            <div class="text-center">
-                                <div class="card-body">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas,
-                                        voluptatibus
-                                        sed voluptatem ipsa qui rerum animi obcaecati eveniet laudantium provident
-                                        molestiae, doloribus
-                                        quae numquam quidem possimus voluptas magni fugit recusandae.</p>
-                                </div>
-                                <img class="card-img-bottom w-50 mt-3" src="/pictures/photographyIcon.svg"
-                                    alt="Photography Icon">
-                            </div>
-                        </div>
-                    </div>
+  <!-- Footer -->
+  <footer id="footer" class="bg-white py-4"></footer>
+  <script>
+    // Load footer content using fetch and insert it into the footer element
+    fetch('HTMLcomponents/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
 
-                    <div class="col-md-4 mb-5">
-                        <div class="card box-shadow d-flex justify-content-center"
-                            style="background-color: #FF94AD; height: 500px;">
-                            <div class="text-center">
-                                <img class="card-img-top w-50 mb-3" src="/pictures/adultAndKid.svg"
-                                    alt="Adult and Kid Icon">
-                                <div class="card-body">
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-                                        expedita modi.
-                                        Officia voluptates blanditiis harum eos dolorum asperiores cupiditate laboriosam
-                                        sunt! Iusto culpa
-                                        error omnis, voluptas minima earum repudiandae alias.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        // Add event listener for copy button click after footer content is loaded
+        document.getElementById("copyButton").addEventListener("click", copyUrlToClipboard);
+      });
+  </script>
+  <script src="JScomponents/footer.js"></script>
 
-        <footer class="text-muted">
-            <div class="container">
-              <p class="float-right">
-                <a href="#">Back to top</a>
-              </p>
-            </div>
-          </footer>
-          
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    </body>
-</div>
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Inline CSS -->
+  <style>
+   
+  </style>
+
+</body>
 
 </html>
