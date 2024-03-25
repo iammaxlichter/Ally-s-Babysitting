@@ -42,3 +42,7 @@ label.col-form-label {
   .fade-in2 {
     animation: fadeIn 2.5s ease-in-out; /* Adjust the duration and timing function as needed */
   }
+
+  .fade-in3 {
+    animation: fadeIn 3.5s ease-in-out; /* Adjust the duration and timing function as needed */
+  }
