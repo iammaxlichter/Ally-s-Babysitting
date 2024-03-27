@@ -1,0 +1,23 @@
+.img-fluid.grow-on-hover {
+    transition: transform 0.5s ease;
+}
+
+.img-fluid.grow-on-hover:hover {
+    transform: scale(1.05); /* Adjust scale value as needed */
+}
+
+/* Target the container that wraps both the image and caption */
+.text-center.fade-in {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable or interactive */
+}
+
+.text-center.fade-in:hover {
+    transform: scale(1.04); /* Scales up the container, including both the image and caption */
+}
+
+/* Optional: To prevent the scaled elements from affecting layout */
+.text-center.fade-in {
+    display: inline-block; /* Or 'block' depending on your layout needs */
+    margin: 0 auto; /* Center align if inline-block */
+}
