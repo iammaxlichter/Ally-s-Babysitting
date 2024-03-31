@@ -1,3 +1,9 @@
+/* All fonts on the page are as follows */
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+/*When each specific page is clicked, it has this property and the following happens */
 .navbar-nav .nav-link.active {
     text-decoration: underline;
   }

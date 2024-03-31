@@ -7,18 +7,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Linking up all my CSS files -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSScomponents/shareModal.css">
   <link rel="stylesheet" href="CSScomponents/navbar.css">
+  <link rel="stylesheet" href="CSScomponents/allacross.css">
   <link rel="stylesheet" href="CSScomponents/footer.css">
   <link rel="stylesheet" href="CSScomponents/imageLoad.css">
-  <link rel="stylesheet" href="CSScomponents/allacross.css">
   <link rel="stylesheet" href="CSScomponents/growAnimation.css">
 
-  <link rel="icon" href="pictures/faviconWhite.ico" type="image/x-icon">
+  <!-- Logo to the left of the name of the website when it shows the tabs -->
+  <link rel="icon" href="pictures/Logos/faviconWhite.ico" type="image/x-icon">
+
+  <!-- Title of the website in the tab -->
   <title>All Across</title>
 
 </head>
@@ -29,30 +32,30 @@
   <!-- Navigation bar, Main content, and footer -->
   <nav id="navbar" class="sticky-top"></nav>
   <main id="mainContent"></main>
-  <footer id="footer" class="bg-white py-4"></footer>
+  <footer id="footer"></footer>
 
+  <!-- Function to fetch and insert HTML content into specified element -->
   <script>
-    // Function to fetch and insert HTML content into specified element
     function fetchAndInsert(url, targetId) {
-        fetch(url)
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById(targetId).innerHTML = html;
-                
-                // If targetId is 'footer', add event listener for copy button click
-                if (targetId === 'footer') {
-                    document.getElementById("copyButton").addEventListener("click", copyUrlToClipboard);
-                }
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById(targetId).innerHTML = html;
 
-                handleNavbar();
-            });
+          // If targetId is 'footer', add event listener for copy button click
+          if (targetId === 'footer') {
+            document.getElementById("copyButton").addEventListener("click", copyUrlToClipboard);
+          }
+
+          handleNavbar();
+        });
     }
 
     // Call fetchAndInsert function for navbar, main content, and footer
     fetchAndInsert('HTMLcomponents/navbar.html', 'navbar');
     fetchAndInsert('HTMLcomponents/allacrossMain.html', 'mainContent');
     fetchAndInsert('HTMLcomponents/footer.html', 'footer');
-</script>
+  </script>
 
 
   <!-- jQuery -->
@@ -65,11 +68,12 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-    
-  <!-- Your custom JavaScript files -->
+
+  <!-- Page specific JavaScript files -->
   <script src="JScomponents/footer.js"></script>
   <script src="JScomponents/navbar.js"></script>
   <script src="JScomponents/imageLoad.js"></script>
 
 </body>
+
 </html>

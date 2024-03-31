@@ -1,16 +1,24 @@
+/* All fonts on the page are as follows */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Caption code */
 .caption {
-    font-family: 'Raleway', sans-serif;
     font-size: 12px;
-    margin-top: 10px; /* Adjust the margin as needed */
+    margin-top: 10px;
     text-align:left;
     margin-bottom: 30px;
   }
   
+  /* each column */
   .col-md-4 {
-    width: 33.33%; /* Each column takes up one-third of the container width */
-    padding: 0 5px; /* Adjust the padding as needed */
+    width: 33.33%; 
+    height:auto;
+    padding: 0 5px; 
   }
   
+  /* each image in the column */
   .col-md-4 img {
     width: 100%;
     height: auto;

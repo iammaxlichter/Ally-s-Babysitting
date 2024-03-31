@@ -1,23 +1,22 @@
+/* Animation for scaling the image up whenever you hover over it*/
 .img-fluid.grow-on-hover {
     transition: transform 0.5s ease;
 }
 
 .img-fluid.grow-on-hover:hover {
-    transform: scale(1.05); /* Adjust scale value as needed */
+    transform: scale(1.05);
 }
 
-/* Target the container that wraps both the image and caption */
 .text-center.fade-in {
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
-    cursor: pointer; /* Changes the cursor to indicate it's clickable or interactive */
+    transition: transform 0.3s ease; 
+    cursor: pointer;
 }
 
 .text-center.fade-in:hover {
-    transform: scale(1.04); /* Scales up the container, including both the image and caption */
+    transform: scale(1.04); 
 }
 
-/* Optional: To prevent the scaled elements from affecting layout */
 .text-center.fade-in {
-    display: inline-block; /* Or 'block' depending on your layout needs */
-    margin: 0 auto; /* Center align if inline-block */
+    display: inline-block; 
+    margin: 0 auto;
 }

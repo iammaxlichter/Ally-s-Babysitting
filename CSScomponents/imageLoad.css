@@ -1,9 +1,10 @@
+/* Animation for the fade in code */ 
 .fade-in {
     opacity:0;
 }
 
 .fade-in-active {
-    animation: fadeInAnimation ease 2s forwards; /* Trigger the fade-in animation */
+    animation: fadeInAnimation ease 2s forwards;
 }
 
 @keyframes fadeInAnimation {
