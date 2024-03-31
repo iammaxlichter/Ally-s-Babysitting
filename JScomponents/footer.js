@@ -6,7 +6,7 @@ function openShareModal() {
   modal.style.display = "block";
 
   
-  // Show the backdrop
+  // See the backdrop
   document.getElementById("modalBackdrop").style.display = "block";
 
   // Center the modal
