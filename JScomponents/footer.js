@@ -4,9 +4,8 @@ function openShareModal() {
   var textBox = modal.querySelector("#shareLink");
   textBox.value = "https://allyjudge.com";
   modal.style.display = "block";
-
   
-  // See the backdrop
+  // Show the backdrop
   document.getElementById("modalBackdrop").style.display = "block";
 
   // Center the modal
@@ -20,9 +19,6 @@ function closeShareModal() {
 
   // Hide the backdrop
   document.getElementById("modalBackdrop").style.display = "none";
-
-  // Restore previous scroll position
-  window.scrollTo(0, previousScrollPosition);
 }
 
 // Event listener for closing share modal when clicking off the modal or pressing Escape key
