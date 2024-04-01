@@ -1,5 +1,7 @@
 // Function to open share modal
-function openShareModal() {
+function openShareModal(event) {
+  event.preventDefault();
+  
   var modal = document.getElementById("shareModal");
   var textBox = modal.querySelector("#shareLink");
   textBox.value = "https://allyjudge.com";
