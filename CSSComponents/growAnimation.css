@@ -1,9 +1,9 @@
 /* Animation for scaling the image up whenever you hover over it*/
-.img-fluid.grow-on-hover {
+.img-fluid {
     transition: transform 0.5s ease;
 }
 
-.img-fluid.grow-on-hover:hover {
+.img-fluid:hover {
     transform: scale(1.05);
 }
 
