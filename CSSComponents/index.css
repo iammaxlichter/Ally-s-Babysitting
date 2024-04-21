@@ -1,31 +1,30 @@
-.jumbotron.cover {
-    position: relative;
-    color: white;
-  }
+/* All fonts on the page are as follows */
+body {
+  font-family: 'Raleway', sans-serif;
+}
 
-  .carousel-container {
-    position: relative;
-    width: 100%;
-    padding-top: 50%;
-    /* 16:9 aspect ratio */
-    overflow: hidden;
-  }
+/* Weak text color */
+.weak-text {
+  color: #999;
+}
 
-  .carousel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+/* Container holding the carousel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
-  .carousel-item img {
-    /* Ensure images fill the container but maintain their aspect ratio */
-    width: 100%;
-    height: auto;
-  }
+/* The carousel itself */
+.carousel {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  .weak-text {
-    color: #999;
-    /* Adjust the color to your preference */
-  }
+/*Each image in the carousel */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}

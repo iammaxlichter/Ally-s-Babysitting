@@ -1,0 +1,22 @@
+/* Animation for scaling the image up whenever you hover over it*/
+.img-fluid.grow-on-hover {
+    transition: transform 0.5s ease;
+}
+
+.img-fluid.grow-on-hover:hover {
+    transform: scale(1.05);
+}
+
+.text-center.fade-in {
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.text-center.fade-in:hover {
+    transform: scale(1.04); 
+}
+
+.text-center.fade-in {
+    display: inline-block; 
+    margin: 0 auto;
+}

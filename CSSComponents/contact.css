@@ -1,48 +1,50 @@
+/* All fonts on the page are as follows */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Text above each input box */
 label.col-form-label {
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    margin-left: 12px;
-    margin-bottom: -5px;
+  font-size: 15px;
+  margin-left: 12px;
+  margin-bottom: -5px;
+}
+
+/* Placeholder text inside each input box */
+::placeholder {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* Input box iself */
+.form-control {
+  border-radius: 5px;
+}
+
+/* Style for submit button */
+.btn-outline-dark {
+  border-radius: 5px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-  ::placeholder {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    opacity: 0.6;
-    /* Adjust opacity for placeholder text */
+  to {
+    opacity: 1;
   }
+}
 
-  /* Style for form-control */
-  .form-control {
-    border-radius: 5px;
-    /* Adjust border radius */
-  }
+.fade-in1 {
+  animation: fadeIn 1.5s ease-in-out;
+}
 
-  /* Style for submit button */
-  .btn-outline-dark {
-    border-radius: 5px;
-    /* Adjust border radius */
-  }
+.fade-in2 {
+  animation: fadeIn 2.5s ease-in-out;
+}
 
-  /* Fade-in animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  .fade-in1 {
-    animation: fadeIn 1.5s ease-in-out; /* Adjust the duration and timing function as needed */
-  }
-  
-  .fade-in2 {
-    animation: fadeIn 2.5s ease-in-out; /* Adjust the duration and timing function as needed */
-  }
-
-  .fade-in3 {
-    animation: fadeIn 3.5s ease-in-out; /* Adjust the duration and timing function as needed */
-  }
+.fade-in3 {
+  animation: fadeIn 3.5s ease-in-out;
+}
