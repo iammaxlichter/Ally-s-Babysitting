@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="CSScomponents/footer.css">
   <link rel="stylesheet" href="CSScomponents/growAnimation.css">
   <link rel="stylesheet" href="CSScomponents/imageLoad.css">
-  
-   <!-- Logo to the left of the name of the website when it shows the tabs -->
+
+  <!-- Logo to the left of the name of the website when it shows the tabs -->
   <link rel="icon" href="pictures/Lgoos/faviconWhite.ico" type="image/x-icon">
 
-  
+
   <!-- Title of the website in the tab -->
   <title>Editorials</title>
 
@@ -28,36 +28,179 @@
 
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
 
-  <!-- Navigation bar, Main content, and footer -->
-  <nav id="navbar" class="sticky-top"></nav>
-  <main id="mainContent"></main>
-  <footer id="footer"></footer>
+    <!-- Logo and tile in top left-->
+    <a class="navbar-brand display-4 ml-2" style="font-size: 25;" href="index.html?page=index" data-page="index">
+      <img src=".\Pictures\Logos\whiteLogo.svg" alt="Logo" style="height:50px; margin-right: 10px;">Ally Judge
+    </a>
 
-  <!-- Function to fetch and insert HTML content into specified element -->
-  <script>
-    function fetchAndInsert(url, targetId) {
-        fetch(url)
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById(targetId).innerHTML = html;
-                
-                // If targetId is 'footer', add event listener for copy button click
-                if (targetId === 'footer') {
-                    document.getElementById("copyButton").addEventListener("click", copyUrlToClipboard);
-                }
+    <!-- Hamburger icon code -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                handleNavbar();
-            });
-    }
+    <!-- All navbar contents-->
+    <div class="collapse navbar-collapse float-right justify-content-end" id="navbarNav">
+      <ul class="navbar-nav" style="font-size: 15px;">
+        <li class="nav-item px-2">
+          <a class="nav-link" href="index.html?page=index" data-page="index">Home</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="editorials.html?page=editorials" data-page="editorials">Editorials</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="portraits.html?page=portraits" data-page="portraits">Portraits</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="allacross.html?page=allacross" data-page="allacross">All Across</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="contact.html?page=contact" data-page="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    // Call fetchAndInsert function for navbar, main content, and footer
-    fetchAndInsert('HTMLcomponents/navbar.html', 'navbar');
-    fetchAndInsert('HTMLcomponents/editorialsMain.html', 'mainContent');
-    fetchAndInsert('HTMLcomponents/footer.html', 'footer');
-</script>
+
+  <div class="mainContent mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-6 p-0 pr-3 text-right mx-auto">
+          <!-- Left images -->
+          <img src=".\Pictures\EditorialsPictures\editorials1.jpg" class="img-fluid fade-in w-75" alt="tempEditorials1">
+          <img src=".\Pictures\EditorialsPictures\editorials2.jpg" class="img-fluid fade-in w-75" alt="tempEditorials2">
+          <img src=".\Pictures\EditorialsPictures\editorials3.jpg" class="img-fluid fade-in w-75" alt="tempEditorials3">
+          <img src=".\Pictures\EditorialsPictures\editorials4.jpg" class="img-fluid fade-in w-75" alt="tempEditorials4">
+          <img src=".\Pictures\EditorialsPictures\editorials5.jpg" class="img-fluid fade-in w-75" alt="tempEditorials5">
+          <img src=".\Pictures\EditorialsPictures\editorials6.jpg" class="img-fluid fade-in w-75" alt="tempEditorials6">
+          <img src=".\Pictures\EditorialsPictures\editorials7.jpg" class="img-fluid fade-in w-75" alt="tempEditorials7">
+          <img src=".\Pictures\EditorialsPictures\editorials8.jpg" class="img-fluid fade-in w-75" alt="tempEditorials8">
+          <img src=".\Pictures\EditorialsPictures\editorials9.jpg" class="img-fluid fade-in w-75" alt="tempEditorials9">
+          <img src=".\Pictures\EditorialsPictures\editorials10.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials10">
+          <img src=".\Pictures\EditorialsPictures\editorials11.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials11">
+          <!-- Add more left images here -->
+        </div>
+
+        <div class="col-md-6 col-6 p-0 pl-3 text-left mx-auto">
+          <!-- Right images -->
+          <img src=".\Pictures\EditorialsPictures\editorials12.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials12">
+          <img src=".\Pictures\EditorialsPictures\editorials13.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials13">
+          <img src=".\Pictures\EditorialsPictures\editorials14.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials14">
+          <img src=".\Pictures\EditorialsPictures\editorials15.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials15">
+          <img src=".\Pictures\EditorialsPictures\editorials16.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials16">
+          <img src=".\Pictures\EditorialsPictures\editorials17.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials17">
+          <img src=".\Pictures\EditorialsPictures\editorials18.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials18">
+          <img src=".\Pictures\EditorialsPictures\editorials19.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials19">
+          <img src=".\Pictures\EditorialsPictures\editorials20.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials20">
+          <img src=".\Pictures\EditorialsPictures\editorials21.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials21">
+          <img src=".\Pictures\EditorialsPictures\editorials22.jpg" class="img-fluid fade-in w-75"
+            alt="tempEditorials22">
+          <!-- Add more right images here -->
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <div class="container-fluid mt-5" id="footer">
+
+    <!-- The leftside of the footer -->
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="ml-4">
+
+        <!-- The first row (icons) -->
+        <ul class="list-inline text-muted">
+          <li class="list-inline-item mr-3"><a href="https://www.instagram.com/allyjudge/"><i class="fab fa-instagram"
+                style="color: gray;"></i></a></li>
+          <li class="list-inline-item mr-3"><a href="https://www.facebook.com/allyson.judge.3"><i
+                class="fab fa-facebook" style="color: gray;"></i></a></li>
+          <li class="list-inline-item">
+            <a href="#" onclick="openShareModal(event)">
+              <i class="fas fa-share-alt" style="color: gray;"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- The second line -->
+        <p class="text-muted">Ally Judge © 2024</p>
+
+      </div>
+
+      <!-- The right side "back to top" button-->
+      <div class="mr-4">
+        <p class="mb-0"><a href="#">Back to top</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blur effect background for modal -->
+  <div id="modalBackdrop" class="modal-backdrop"></div>
+
+  <!-- The modal content -->
+  <div id="shareModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header text-center justify-content-center" style="border-bottom: none;">
+          <h4 class="modal-title" style="font-size: 15px;">Share</h4>
+        </div>
+        <div class="sharethis-inline-share-buttons"></div>
+
+        <!-- Modal Body -->
+        <div class="modal-body text-center">
+          <div class="input-group">
+            <input id="shareLink" type="text" class="form-control bg-light" value="https://allyjudge.com" readonly>
+            <div class="input-group-append">
+              <button id="copyButton" class="btn btn-outline-secondary" type="button">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Copy to clipboard message when button is pressed -->
+          <div id="copySuccessMessage" class="text-success mt-2" style="display: none; font-size: 13px;">Successfully
+            copied to
+            clipboard!</div>
+
+        </div>
+
+        <!-- Row of sharing icons -->
+        <div class="row mt-1 justify-content-center share-icons">
+          <div class="text-center">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fallyjudgephotography.com"
+              target="_blank" class="btn btn-outline-secondary"><i class="fab fa-facebook"></i></a>
+          </div>
+          <div class="text-center">
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fallyjudgephotography.com" target="_blank"
+              class="btn btn-outline-secondary"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="text-center">
+            <a href="https://wa.me/?text=Check%20out%20this%20website:%20https%3A%2F%2Fallyjudgephotography.com"
+              target="_blank" class="btn btn-outline-secondary"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div class="text-center">
+            <a href="mailto:?subject=Check%20out%20this%20website&body=Here's%20a%20link%20to%20a%20website%20I%20thought%20you%20might%20like:%20https%3A%2F%2Fallyjudgephotography.com"
+              class="btn btn-outline-secondary"><i class="far fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -74,4 +217,5 @@
   <script src="JScomponents/imageLoad.js"></script>
 
 </body>
+
 </html>
