@@ -4,7 +4,7 @@ function openShareModal(event) {
   
   var modal = document.getElementById("shareModal");
   var textBox = modal.querySelector("#shareLink");
-  textBox.value = "https://allyjudge.com";
+  textBox.value = "https://allyjudgephotography.com";
   modal.style.display = "block";
   
   // Show the backdrop

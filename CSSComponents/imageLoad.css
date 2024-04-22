@@ -4,7 +4,7 @@
 }
 
 .fade-in-active {
-    animation: fadeInAnimation ease 2s forwards;
+    animation: fadeInAnimation ease 1s forwards;
 }
 
 @keyframes fadeInAnimation {

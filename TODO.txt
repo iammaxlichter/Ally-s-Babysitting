@@ -1,0 +1,3 @@
+add href's for the linkedin and email in footer of all pages
+change logo eventually
+share icons, linkedin, change from iammaxlichter.github.io/Allys-Photography to allyjudgephotography

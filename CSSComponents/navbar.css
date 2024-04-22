@@ -5,6 +5,6 @@ body{
 
 /*When each specific page is clicked, it has this property and the following happens */
 .navbar-nav .nav-link.active {
-    text-decoration: underline;
+    font-weight: bold;
   }
   
